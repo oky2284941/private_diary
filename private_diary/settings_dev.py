@@ -2,7 +2,7 @@ from .settings_common import *
 
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = <各自自動生成された値>
+SECRET_KEY = 'my_secret_key'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -51,3 +51,5 @@ LOGGING = {
 }
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
